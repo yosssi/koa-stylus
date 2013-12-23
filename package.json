@@ -1,0 +1,26 @@
+{
+  "name": "koa-stylus",
+  "version": "0.0.1",
+  "description": "Stylus middleware for Koa",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosssi/koa-stylus.git"
+  },
+  "keywords": [
+    "koa",
+    "stylus"
+  ],
+  "author": {
+    "name": "Keiji Yoshida",
+    "email": "yoshida.keiji.84@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosssi/koa-stylus/issues"
+  },
+  "homepage": "https://github.com/yosssi/koa-stylus",
+  "dependencies": {
+    "stylus": "~0.41.3"
+  }
+}
