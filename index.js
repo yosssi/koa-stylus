@@ -1,12 +1,7 @@
 module.exports = function(options){
-  return function*(next){
-    yield stylus(this.req, this.res, options);
-    yield next;
-  };
-};
-
-function stylus(req, res, options){
-  return function(callback){
-    require('stylus').middleware(options)(req, res, callback);
+  return function(ctx, next){
+    return Promise.resolve(
+      require('stylus').middleware(options)(ctx.req, ctx.res, next)
+    );
   };
 }
