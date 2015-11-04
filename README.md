@@ -10,7 +10,7 @@ $ npm install koa-stylus
 
 ## Options
 
-  See [the Stylus middleware document](https://github.com/LearnBoost/stylus/blob/master/docs/middleware.md).
+  See [the Stylus middleware document](https://learnboost.github.io/stylus/docs/middleware.html).
 
 ## Example
 
