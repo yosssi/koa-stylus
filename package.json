@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/yosssi/koa-stylus",
   "dependencies": {
-    "stylus": "~0.52.4"
+    "stylus": "0.54.2"
   }
 }
