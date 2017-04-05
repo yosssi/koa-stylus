@@ -1,18 +1,16 @@
 'use strict';
 
-var stylus = require('stylus');
+const stylus = require('stylus');
 
 module.exports = function(options){
-  var middleware = stylus.middleware(options);
+  const middleware = stylus.middleware(options);
 
-  function compile(req, res){
-    return function(callback){
-      middleware(req, res, callback);
-    };
-  }
+  const compile = (req, res) => new Promise((resolve, reject) => {
+    middleware(req, res, err => err ? reject(err) : resolve());
+  });
 
-  return function*(next){
-    yield compile(this.req, this.res);
-    yield next;
+  return async function(ctx, next){
+    await compile(ctx.req, ctx.res);
+    await next();
   };
 };
