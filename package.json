@@ -1,6 +1,6 @@
 {
   "name": "koa-stylus",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Stylus middleware for Koa",
   "main": "index",
   "repository": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/yosssi/koa-stylus",
   "dependencies": {
-    "stylus": "0.54.2"
+    "stylus": "0.54.5"
   }
 }
